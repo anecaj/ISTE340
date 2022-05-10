@@ -1,0 +1,152 @@
+/* Adrian Necaj 340 */
+
+/* Reset button styling */
+#resetButton{
+    background-color: #d1d1d1;
+    color: black;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 100px;
+    margin-top: -100px;
+    border: 2px solid black;
+    margin: 2px;
+    font-family: Verdana;
+    
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#resetButton:hover {
+    background-color: #a5a5a5;
+    color: black;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Link styling (only used in footer) */
+a{
+    color: #595959;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+a:active{
+    color: #8c8c8c;
+}
+
+a:hover{
+    color: #8c8c8c;
+}
+
+#divv{
+    padding-top: 30px;   
+    display: inline-block;
+    width: 100%;
+    border-radius: 100px;
+}
+
+p{
+    font-family: Verdana;
+    font-size: 20;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* Start the movie picker button styling */
+#loadButton{
+    background-color: #fde5e5;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 60px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 65px;
+    display: inline-block;
+    
+    margin-top: 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    font-family: Verdana;
+    
+    -webkit-transition-duration: 0.4s;
+}
+
+#loadButton:hover {
+    background-color: #a5a5a5;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Basic body styles */
+body{
+    font-family: Verdana;
+    font-size: 14px;
+    /* background-image: url("/media/images/background.jpg"); */
+    background-color: #fcf7ce;
+    text-align: center;
+}
+
+#dropdown{
+    text-align: center;
+    border: 2px solid #3a6ef3;
+}
+
+#main{
+    padding-left: 100px;
+    padding-top: 50px;
+    width: auto;
+    display: inline-block;
+}
+
+#images{
+    animation: slide-up 0.4s ease;
+}
+
+img{
+    z-index: 10;
+    max-height: 200px;
+    width: auto;
+    padding: 10px;
+    animation: slide-up 0.4s ease;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+/* #divBtns {
+    margin: auto;
+}
+
+#divForm {
+    width: 20em;
+    background-color: #b8b8b9;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-style: dotted;
+    /* position: absolute;
+    left: 100px;
+    position: relative;
+} */

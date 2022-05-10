@@ -1,0 +1,128 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+        <title>Adrian Necaj: Cartoon Picker</title>
+        <link rel="stylesheet" href="media/css/main.css">
+    </head>
+    
+    <body>
+        <div id = "main"></div>
+        <script src="media/js/data.js"></script>
+        <script src="media/js/cookies.js"></script>
+        <script src="media/js/script.js"></script>
+
+        <!-- <div id="divForm" style="opacity: 1.01;">
+            <form action method="get" onsubmit="return val()">
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="message">Message: </label>
+                    <input type="textarea" name="description" id="description">
+                </div>
+                <div id="divBtns">
+                    <input type="checkbox" id="save">
+                    "save the data!"
+                    <br>
+                    <input type="submit" name="s" value="Submit">
+                    <input type="button" value="Clear" onclick="clearData()">
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        function createForm() {
+            var divForm = document.createElement('div');
+                    divForm.setAttribute('id','divForm');
+                    divForm.setAttribute('style','opacity:0;')
+
+                    var form = document.createElement('form');
+                    form.setAttribute('action','');
+                    form.setAttribute('method','get');
+                    form.setAttribute('onsubmit','return val()');
+                    var input1 = document.createElement('input');
+                    input1.setAttribute('type', 'text');
+                    input1.setAttribute('name','email');
+                    input1.setAttribute('id','email');
+                    if(window.localStorage){
+                        if(localStorage.getItem('email')!=null){
+                            input1.setAttribute('value', localStorage.getItem('email'));
+                        }
+                    } else {
+                        if(GetCookie('email')!=null) { // first time here
+                            input1.setAttribute('value', GetCookie('email'));
+                        }
+                    }
+                    
+
+                    var br = document.createElement("br");
+                    var input2 = document.createElement('input');
+                    input2.setAttribute('type', 'textarea');
+                    input2.setAttribute('name','description');
+                    input2.setAttribute('id','description');
+                    if(window.localStorage) {
+                        if(localStorage.getItem('description')!=null){
+                            input2.setAttribute('value', localStorage.getItem('description'));
+                        }
+                    } else {
+                        if(GetCookie('description')!=null) { // first time here
+                            input2.setAttribute('value', GetCookie('description'));
+                        }
+                    }
+
+
+                    var input3 = document.createElement('input');
+                    input3.setAttribute('type', 'submit');
+                    input3.setAttribute('name','s');
+                    input3.setAttribute('value','Submit');
+
+                    var input4 = document.createElement('input');
+                    input4.setAttribute('type', 'button');
+                    input4.setAttribute('value','Clear');
+                    input4.setAttribute('onclick','clearData()');
+
+                    var input5 = document.createElement('input');
+                    input5.setAttribute('type','checkbox');
+                    //input5.setAttribute('value','')
+                    input5.setAttribute('id','save');
+
+                    var label1 = document.createElement('label');
+                    var text = document.createTextNode('Email: ');
+                    label1.appendChild(text);
+                    label1.setAttribute('for', 'email');
+                    form.appendChild(label1);
+                    form.appendChild(input1);
+                    form.appendChild(br);
+                    var label2 = document.createElement('label');
+                    var text2 = document.createTextNode('Message: ');
+                    label2.appendChild(text2);
+                    label2.setAttribute('for', 'message');
+                    form.appendChild(label2);
+                    form.appendChild(input2);
+                    form.appendChild(br);
+                    
+
+                    var divBtns = document.createElement('div');
+                    divBtns.setAttribute('id','divBtns');
+                    divBtns.appendChild(input5);
+                    var saveText = document.createTextNode('save data');
+                    divBtns.appendChild(saveText);
+                    
+                    
+                    divBtns.appendChild(br);
+                    divBtns.appendChild(input3);
+                    
+                    divBtns.appendChild(input4);
+                    form.appendChild(divBtns);
+                    
+                    divForm.appendChild(form);
+                    document.getElementById('holder').appendChild(divForm);
+
+                    fadeIn(divForm);
+                    createForm();
+        }
+    </script>
+    
+</html>
