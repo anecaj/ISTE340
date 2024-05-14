@@ -1,23 +1,20 @@
-# ISTE340
-Client Programming
+# Cartoon Picker
 
-Dynamic creation of at least 3 sets of <select><option>value… nodes
+## Overview
+Cartoon Picker is a web application that allows users to submit their email and a message, with features for persistent data storage using cookies or local storage.
 
-Constructor method that creates the next select menu from the last choice
+## Features
+- Data Persistence: Uses local storage or cookies to save user data.
+- Form Submission: Users can submit data through a dynamically created form.
+- Clear Data: Clears saved data.
 
-Use of the following Commands (among many others):
+## Installation
+1. Clone the repository: git clone [repository-url]
+2. Open index.html in a web browser.
 
-createElement, setAttribute, appendChild, getElementById, getElementsByTagName, createTextNode, nodeValue to name a few…
-
-Do NOT use visibility to show/hide the selections – I want them dynamically created!
-
-Some use of DHTML (menu system, sliding elements, etc. animation preferred!)
-
-No layout with tables! Everything done with CSS
-
-No use of innerHTML! (None at all, I will search for it and hit you hard)
-
-Include comments in the code to clearly explain functionality.
-
-Re-direction of non-modern browsers to a legacy page.
+## Usage
+- Enter your email and a message in the form.
+- Check "save data" to save your data locally.
+- Click "Submit" to submit your data.
+- Click "Clear" to erase stored data.
 
